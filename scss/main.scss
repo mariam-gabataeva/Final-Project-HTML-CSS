@@ -1,0 +1,158 @@
+@import "./reset";
+@import "./responsive";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600;1,700;1,800&family=Rubik+Bubbles&family=Vollkorn:ital,wght@1,400;1,700&display=swap&family=IBM+Plex+Mono:ital,wght@1,700&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Vollkorn', serif;
+
+    .header-wraper{
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(148,187,233,1) 98%);
+        padding: 30px 0;
+        position: relative;
+    
+        .wrapper{
+            max-width: 1170px;
+            width: 100%;
+            height: 46px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-name{
+            height: 30px;
+            color:black;
+            text-align: center;
+            font-family: "IBM Plex Mono";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; 
+        }
+
+        a{
+            color: black;
+        }
+
+        .sing-in{
+            color: white;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 10px 40px ;
+            background: linear-gradient(90deg, rgba(103,240,222,1) 0%, rgba(46,128,219,1) 100%);
+        }
+
+        ul{
+            padding: 12px 0;
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .burger-icon {
+            display: none;
+        }
+    
+        @media (max-width: 768px){
+            .wrapper, 
+            ul{
+                display: block;
+                text-align: center;
+            }   
+            .nav-a{
+                display: block;
+            }  
+            .social-icons{
+                display: flex;
+                justify-content: center; 
+            } 
+            .logo{
+                text-align: left;
+            }
+            .burger-icon{
+                color: #fff;
+                display: block;
+                font-size: 30px;
+                position: absolute;
+                top: 40px;
+                right: 30px;
+                cursor:pointer;
+            }
+            .menu-ul,.social-icons{
+                display: none;
+            }   
+            .menu-ul.open-menu{
+                display: block;
+            } 
+            .social-icons.open-socicon{
+                display: flex;
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: 740px;
+        margin: 34px 0px 60px;
+        background-image: url(../imeges/tour6.jpg);
+        background-position: bottom;
+
+        h1{
+            color: black;
+            text-shadow: 0px 5px 13px rgba(255, 255, 255, 0.40);
+            font-family: "Vollkorn";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 168px 0px 10px;
+        }
+
+        p{
+            max-width: 100%;
+            width: 569px;
+            height: 70px;
+            text-align: center;
+            color: black;
+            text-shadow: 0px 1px 20px #FFF;
+            font-family: 'Mulish';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+        }
+
+        @media(max-width: 768px){
+            main{
+                h1{
+                    font-size: 40px; 
+                }
+                p{
+                    max-width: 100%;
+                    width: 483px;
+                    height: 70px;
+                    font-size: 14px;
+                }
+            }
+        }
+        @media(max-width: 600px){
+            main{
+                h1{
+                font-size: 30px;
+                }
+                p{
+                    max-width: 100%;
+                    width: 400px;
+                    height: 70px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }   
+}
