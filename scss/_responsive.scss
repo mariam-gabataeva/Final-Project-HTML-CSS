@@ -5,64 +5,21 @@
 }
 
 @media(max-width: 768px){
-    .wrapper, 
-  ul{
-    display: block;
-    text-align: center;
-  }   
-  .nav-a{
-    display: block;
-  }  
-  .social-icons{
-    display: flex;
-    justify-content: center; 
-  } 
-  .logo{
-    text-align: left;
-  }
-  .burger-icon{
-    color: #fff;
-    display: block;
-    font-size: 30px;
-    position: absolute;
-    top: 40px;
-    right: 30px;
-    cursor:pointer;
-  }
-  .menu-ul,
-  .social-icons{
-    display: none;
-  }   
-  .menu-ul.open-menu{
-    display: block;
-  } 
-  .social-icons.open-socicon{
-    display: flex;
-  } 
 
-  main{
-    h1{
-        font-size: 40px; 
-    }
-    p{
-        max-width: 100%;
-        width: 483px;
-        height: 70px;
-        font-size: 14px;
-    }
-}
 }
 
 @media(max-width: 600px){
-    main{
+    body{
+      main{
         h1{
-            font-size: 30px;
+          display: inline-block;
+          font-family: "Vollkorn";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding: 0px 30px;
         }
-        p{
-            max-width: 100%;
-            width: 400px;
-            height: 70px;
-            font-size: 14px;
-        }
+      }
     }
 }
