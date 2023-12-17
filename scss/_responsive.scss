@@ -1,25 +1,20 @@
 @media(max-width: 1200px){
-    .wrapper{
-        padding: 0px 25px;
-    }
+  
 }
+ 
 
 @media(max-width: 768px){
-
+  body{
+    .info-korea, .travel-info, .travel-time{
+      padding: 0px 30px;
+    }
+  }
 }
 
 @media(max-width: 600px){
-    body{
-      main{
-        h1{
-          display: inline-block;
-          font-family: "Vollkorn";
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          padding: 0px 30px;
-        }
-      }
+  body{
+    .info-korea, .travel-info, .travel-time{
+      padding: 0px 30px;
     }
+  }
 }
