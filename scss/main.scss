@@ -116,7 +116,8 @@ body{
             }
         }
     }
-    .info-korea, .travel-info, .trasport-info, .korean-food{
+
+    .info-korea, .travel-info, .korean-food, .trasport-info, .learning{
         width: 100%;
         max-width: 1590px;
         min-height: 500px;
@@ -144,9 +145,11 @@ body{
             max-width: 100%;
         }
     }
+
     .travel-info{
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(245,182,249,1) 100%);
     }
+
     .travel-time{
         width: 100%;
         max-width: 1590px;
@@ -199,6 +202,7 @@ body{
            } 
         }
     }
+
     .korean-food{
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(150,104,230,1) 100%);
 
@@ -211,6 +215,7 @@ body{
             gap: 20px;
         }
     }   
+
     .trasport-info{
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(186,242,219,1) 100%);
 
@@ -218,5 +223,11 @@ body{
             color: rgb(22, 46, 22);
         }
     }
+
+    .learning{
+        
+        background: radial-gradient(circle, rgba(234,230,236,1) 0%, rgba(210,76,92,1) 88%);
+    }
 }
+
 @import "./responsive";
