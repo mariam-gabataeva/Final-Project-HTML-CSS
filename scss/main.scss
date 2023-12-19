@@ -8,7 +8,7 @@ body{
     font-family: 'Pacifico';
     font-family: 'Abril Fatface', serif;
     .header-wraper{
-        background: linear-gradient(90deg, rgba(179,231,235,1) 7%, rgba(152,141,209,1) 52%, rgba(230,184,207,1) 93%);
+        background:white;
         padding: 30px 0;
         position: relative;
         position: sticky;
@@ -25,15 +25,17 @@ body{
     }
     .logo-name{
         font-family: 'Pacifico';
-        font-size: 30px;
-        font-weight: 400;
+        font-size: 34px;
+        font-weight: 600;
+        color: black;
     }
-    a{
-        color: #fff;
+    .nav-a{
+        color: #101011;
         padding: 7px 15px;
+        font-size: 20px;
 
         &:hover{
-            color: black;
+            color: rgb(29, 76, 231);
         }
     }
     ul{
@@ -60,7 +62,7 @@ body{
             text-align: left;
         }
         .burger-icon{
-            color: #fff;
+            color: #000000;
             display: block;
             font-size: 30px;
             position: absolute;
@@ -86,7 +88,8 @@ body{
         background-image: url(../imeges/korea4.jpg);
         background-position: center;
         .main-text{
-            width: 438px;
+            width: 100%;
+            max-width: 600px;
             height: 350px;
             margin: 100px auto 0px;
             padding: 25px;
@@ -94,35 +97,36 @@ body{
             h1{
                 text-align: center;
                 font-family: 'Abril Fatface';
-                font-size: 44px;
+                font-size: 60px;
                 font-weight: 400;
-                line-height: 52px;
+                line-height: 60px;
                 color: #fff;
                 margin-bottom: 50px;
             }
             .learn-more{
-                padding: 20px 30px;
-                background: rgb(67, 6, 117);
+                padding: 22px 35px;
+                background: rgb(116, 151, 245);
                 border-radius: 30px;
                 font-family: 'Roboto';
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 500;
-                color: rgb(197, 193, 197);
+                color: rgb(247, 247, 247);
                 margin: auto;
 
                 &:hover{
-                    color: white;
+                    background: blue;
                 }
             }
         }
     }
 
-    .info-korea, .travel-info, .korean-food, .trasport-info, .learning{
+    .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info, .learning{
         width: 100%;
-        max-width: 1590px;
+        max-width: 1660px;
         min-height: 500px;
-        margin: 100px auto;
-        padding: 16px 20px;
+        margin: 50px auto;
+        padding: 30px;
+        border-radius: 30px;
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(182,213,249,1) 100%);
 
         h2{
@@ -135,27 +139,52 @@ body{
             font-family: 'Roboto';
             font-size: 18px;
             font-weight: 400;
-            color: rgb(107, 88, 192);
+            color: #472249;
             margin: 15px 5px;
-            line-height: 22px;
+            line-height: 30px;
         }
         img{
             width: auto;
             height: auto;
             max-width: 100%;
+            border-radius: 30px;
         }
     }
 
     .travel-info{
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(245,182,249,1) 100%);
+
+        .korea-spring, .korea-summer, .korea-autumn, .korea-winter{
+            width: 100%;
+            max-width: 1660px;
+            min-height: 500px;
+            margin: 50px auto 0px;
+
+            h3{
+                font-family: 'Abril Fatface';
+                font-size: 28px;
+                font-weight: 500;
+                padding: 30px 0px 20px;
+            }
+
+            .picture{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                gap: 30px;
+                margin: auto;
+
+                img{
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    border-radius: 30px;
+                }
+           } 
+        }
     }
 
     .travel-time{
-        width: 100%;
-        max-width: 1590px;
-        min-height: 500px;
-        margin: 100px auto;
-        padding: 16px 20px;
         background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(242,186,203,1) 100%);
 
         h2{
@@ -171,33 +200,37 @@ body{
             font-weight: 700;
             color: #472249;
             margin: 15px 5px;
-            line-height: 22px;
+            line-height: 30px;
 
         }
         .places{
-            h3{
+            h4{
                 font-family: 'Abril Fatface';
                 font-size: 27px;
                 font-weight: 400;
                 color: black;
-                margin: 15px 5px;
+                margin: 30px 5px 16px;
             }
             p{
                 font-family: 'Roboto';
                 font-size: 18px;
                 font-weight: 400;
                 color: #472249;
-                margin: 7px 10px;
-                line-height: 30px;
+                margin: 10px 10px;
+                line-height: 32px;
             }
-           .soul-poto{
-                margin: 30px 0px 50px;
+           .picture{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+                margin: auto;
 
                 img{
                     width: auto;
                     height: auto;
                     max-width: 100%;
-                    margin-right: 20px;
+                    border-radius: 30px;
                 }
            } 
         }
@@ -209,11 +242,21 @@ body{
         p{
             color: #43095e;
         }
-        .food-poto{
+
+        .picture{
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
-        }
+            justify-content: center;
+            gap: 30px;
+            margin: auto;
+
+            img{
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                border-radius: 30px;
+            }
+       } 
     }   
 
     .trasport-info{
@@ -225,8 +268,100 @@ body{
     }
 
     .learning{
-        
-        background: radial-gradient(circle, rgba(234,230,236,1) 0%, rgba(210,76,92,1) 88%);
+        width: 100%;
+        max-width: 1660px;
+        min-height: 1400px;
+        background: radial-gradient(circle, rgba(234,230,236,1) 0%, rgba(186,194,209,1) 88%);
+
+        h2{
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            padding: 20px 0px 15px;
+        }
+        .universities{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 30px;
+            width: 100%;
+            max-width: 1660px;
+            min-height: 700px;
+
+            .univer{
+                width: 100%;
+                max-width:513px;
+                min-height: 500px;
+                border: 1px solid white;
+                border-radius: 30px;
+                background: white;
+                box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
+                -webkit-box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
+                -moz-box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
+
+                img{
+                    width: auto;
+                    height: 380px;
+                    max-width: 100%;
+                    border-radius: 30px;
+                    border: 3px solid white;
+                }
+
+                .univer-info{
+                    width: 100%;
+                    max-width:535px;
+                    min-height: 400px;
+                    display: flex;
+                    flex-direction: column;
+
+                    h5{
+                        font-family: 'Roboto';
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: rgb(25, 49, 25);
+                        padding: 25px 15px 15px;
+                    }
+                    p{
+                        font-family: 'Roboto';
+                        font-size: 19px;
+                        font-weight: 400;
+                        color: rgb(106, 82, 109);
+                        margin: 5px 5px 0px;
+                        padding: 10px;
+    
+                        span{
+                            color: rgb(0, 0, 0);
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+                    }
+                    .seemore{
+                        width: 100%;
+                        max-width: 150px;
+                        height: 55px;
+                        padding: 18px 0px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 400;
+                        border-radius: 35px;
+                        background: rgb(200, 169, 235);
+                        box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
+                        -webkit-box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
+                        -moz-box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
+                        color: black;
+                        transition: all 1s;
+                        margin: auto;
+
+                        &:hover{
+                            color: white;
+                            font-size: 19px;
+                        }
+
+                    }
+                }
+
+            }
+        }
     }
 }
 
