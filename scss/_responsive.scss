@@ -3,6 +3,15 @@
     .wrapper{
       padding: 0px 50px;
     }
+    main{
+      .main-text{
+        width: 450px;
+
+        h1{
+          font-size: 45px;
+        }
+      }
+    }
     .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info{
       h2, h3, h4{
         text-align: center;
@@ -15,6 +24,49 @@
         text-align: center;
       }
     }
+    .travel-info{
+      .korea-spring, .korea-summer, .korea-autumn, .korea-winter{
+        h3{
+          font-size: 30px;
+          padding: 0px 0px 20px;
+        }
+      }
+    }
+    .learning{
+      h2{
+        font-size: 40px;
+        font-weight: 500;
+      }
+      .universities{
+        .univer{
+          .univer-info{
+            p{
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+    footer{
+      padding: 50px 30px;
+
+      .footer-conteiner{
+        .footer-left{
+          margin-bottom: 30px;
+          h6{
+            font-size: 40px;
+            font-weight: 500;
+            padding: 0px 0px 15px
+          }
+          p{
+            font-size: 25px;
+            a{
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
   }
 
 }
@@ -22,6 +74,9 @@
 
 @media(max-width: 768px){
   body{
+    .header-wraper{
+      padding: 30px 0px;
+    }
     .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info{
       padding: 25px;
     }
@@ -41,11 +96,17 @@
 
 @media(max-width: 600px){
   body{
+    .header-wraper{
+      padding: 30px 0px;
+    }
     .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info{
       padding: 25px;
 
       h2{
         font-size: 25px;
+      }
+      p{
+        font-size: 18px;
       }
     }
     .travel-info{
@@ -54,6 +115,9 @@
           font-size: 25px;
           padding: 0px 0px 20px;
         }
+        p{
+          font-size: 18px;
+        }
       }
     }
     .travel-time{
@@ -61,23 +125,47 @@
         padding: 30px 0px 0px;
         font-size: 23px;
       }
+      .places{
+        p{
+          font-size: 18px;
+        }
+      }
     }
     .learning{
       h2{
-        font-size: 35px;
-        font-weight: 500;
+        font-size: 32px;
+        font-weight: 600;
       }
       .universities{
         .univer{
           .univer-info{
             h5{
               font-size: 25px;
+              padding: 25px 20px 15px;
             }
             p{
-              font-size: 17px;
+              font-size: 18px;
               span{
                 font-size: 20px;
               }
+            }
+          }
+        }
+      }
+    }
+    footer{
+      .footer-conteiner{
+        .footer-left{
+          margin-bottom: 30px;
+          h6{
+            font-size: 40px;
+            font-weight: 500;
+            padding: 0px 0px 15px
+          }
+          p{
+            font-size: 25px;
+            a{
+              font-size: 22px;
             }
           }
         }

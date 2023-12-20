@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Pacifico';
     font-family: 'Abril Fatface', serif;
     .header-wraper{
         background:white;
-        padding: 30px 0;
-        position: relative;
+        padding: 15px 0;
         position: sticky;
         top: 0px;
     }
@@ -41,6 +41,12 @@ body{
     ul{
         padding: 5px 0;
         display: flex;
+        align-items: center;
+    }
+    .geolab{
+        width: 70px;
+        height: 60px;
+
     }
     .burger-icon {
         display: none;
@@ -97,8 +103,8 @@ body{
             h1{
                 text-align: center;
                 font-family: 'Abril Fatface';
-                font-size: 60px;
-                font-weight: 400;
+                font-size: 62px;
+                font-weight: 500;
                 line-height: 60px;
                 color: #fff;
                 margin-bottom: 50px;
@@ -120,14 +126,14 @@ body{
         }
     }
 
-    .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info, .learning{
+    .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info, .learning, .about-us, .registation-section{
         width: 100%;
         max-width: 1660px;
         min-height: 500px;
         margin: 50px auto;
         padding: 30px;
         border-radius: 30px;
-        background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(182,213,249,1) 100%);
+        background: radial-gradient(circle, rgba(171,219,242,1) 0%, rgba(255,255,255,1) 83%);
 
         h2{
             font-family: 'Abril Fatface';
@@ -137,7 +143,7 @@ body{
         }
         p{
             font-family: 'Roboto';
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 400;
             color: #472249;
             margin: 15px 5px;
@@ -152,8 +158,6 @@ body{
     }
 
     .travel-info{
-        background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(245,182,249,1) 100%);
-
         .korea-spring, .korea-summer, .korea-autumn, .korea-winter{
             width: 100%;
             max-width: 1660px;
@@ -162,7 +166,7 @@ body{
 
             h3{
                 font-family: 'Abril Fatface';
-                font-size: 28px;
+                font-size: 30px;
                 font-weight: 500;
                 padding: 30px 0px 20px;
             }
@@ -180,13 +184,11 @@ body{
                     max-width: 100%;
                     border-radius: 30px;
                 }
-           } 
+            }
         }
     }
 
     .travel-time{
-        background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(242,186,203,1) 100%);
-
         h2{
             font-family: 'Abril Fatface';
             font-size: 35px;
@@ -209,11 +211,11 @@ body{
                 font-size: 27px;
                 font-weight: 400;
                 color: black;
-                margin: 30px 5px 16px;
+                margin: 60px 5px 16px;
             }
             p{
                 font-family: 'Roboto';
-                font-size: 18px;
+                font-size: 22px;
                 font-weight: 400;
                 color: #472249;
                 margin: 10px 10px;
@@ -237,8 +239,6 @@ body{
     }
 
     .korean-food{
-        background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(150,104,230,1) 100%);
-
         p{
             color: #43095e;
         }
@@ -260,18 +260,14 @@ body{
     }   
 
     .trasport-info{
-        background: radial-gradient(circle, rgba(250,250,250,1) 12%, rgba(186,242,219,1) 100%);
-
         p{
             color: rgb(22, 46, 22);
         }
     }
 
     .learning{
-        width: 100%;
         max-width: 1660px;
         min-height: 1400px;
-        background: radial-gradient(circle, rgba(234,230,236,1) 0%, rgba(186,194,209,1) 88%);
 
         h2{
             text-align: center;
@@ -295,10 +291,9 @@ body{
                 border: 1px solid white;
                 border-radius: 30px;
                 background: white;
-                box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
-                -webkit-box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
-                -moz-box-shadow: -2px 3px 51px 0px rgba(255,255,255,0.8);
-
+                box-shadow: 0px 2px 95px 19px rgba(82,125,207,0.69);
+                -webkit-box-shadow: 0px 2px 95px 19px rgba(82,125,207,0.69);
+                -moz-box-shadow: 0px 2px 95px 19px rgba(82,125,207,0.69);
                 img{
                     width: auto;
                     height: 380px;
@@ -313,13 +308,14 @@ body{
                     min-height: 400px;
                     display: flex;
                     flex-direction: column;
+                    
 
                     h5{
                         font-family: 'Roboto';
                         font-size: 28px;
                         font-weight: 600;
                         color: rgb(25, 49, 25);
-                        padding: 25px 15px 15px;
+                        padding: 25px 20px 15px;
                     }
                     p{
                         font-family: 'Roboto';
@@ -327,7 +323,7 @@ body{
                         font-weight: 400;
                         color: rgb(106, 82, 109);
                         margin: 5px 5px 0px;
-                        padding: 10px;
+                        padding: 10px 20px;
     
                         span{
                             color: rgb(0, 0, 0);
@@ -344,22 +340,133 @@ body{
                         font-size: 18px;
                         font-weight: 400;
                         border-radius: 35px;
-                        background: rgb(200, 169, 235);
-                        box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
-                        -webkit-box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
-                        -moz-box-shadow: -2px 3px 51px 0px rgba(206,116,219,0.8);
-                        color: black;
+                        background: rgb(202, 214, 252);
+                        box-shadow: 0px 2px 95px 0px rgba(82,125,207,0.75);
+                        -webkit-box-shadow: 0px 2px 95px 0px rgba(82,125,207,0.75);
+                        -moz-box-shadow: 0px 2px 95px 0px rgba(82,125,207,0.75);
+                        color: rgb(13, 63, 128);
                         transition: all 1s;
                         margin: auto;
 
                         &:hover{
-                            color: white;
+                            color: rgb(255, 255, 255);
                             font-size: 19px;
                         }
 
                     }
                 }
 
+            }
+        }
+    }
+    .about-us{
+        padding: 80px;
+        h5{
+            font-family: 'Abril Fatface';
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        p{
+            font-family: 'Roboto';
+            font-size: 20px;
+            font-weight: 400;
+            
+            span{
+                font-family: 'Roboto';
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+    }
+    .registation-section{
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            h2{
+                font-family: "Roboto";
+                align-items: center;
+                font-size: 28px;
+                font-weight: 600;
+                margin: 0px;
+            }
+            input{
+                width: 100%;
+                max-width: 900px;
+                height: 70px;
+                padding: 10px 30px;
+                outline: none;
+                border: 1px solid rgb(208, 218, 255);
+                border-radius: 20px;
+                font-size: 20px;
+            }
+            .submit{
+                width: 100%;
+                max-width: 150px;
+                height: 60px;
+                border-radius: 30px;
+                margin: auto;
+                cursor: pointer;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        min-height: 300px;
+        padding: 50px 0px;
+        background: radial-gradient(circle, rgba(171,219,242,1) 100%, rgba(255,255,255,1) 100%);
+
+        .footer-conteiner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1500px;
+            min-height: 200px;
+            margin: auto;
+            padding: 20px;
+
+            .footer-left{
+                width: 100%;
+                max-width: 750px;
+                h6{
+                    font-family: 'Roboto';
+                    font-size: 45px;
+                    font-weight: 600;
+                    color: white; 
+                    padding: 15px 0px;
+                }
+                p{
+                    font-family: 'Roboto';
+                    font-size: 28px;
+                    font-weight: 400;
+                    padding: 10px 0px;
+                     a{
+                        font-size: 28px;
+                        padding: 0px 10px;
+                        color: rgb(12, 110, 221);
+    
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+            .footer-right{
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+
+                a{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 20px;
+                    }
+                }
             }
         }
     }
