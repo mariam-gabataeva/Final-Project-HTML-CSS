@@ -1,9 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @import "./reset";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-
 body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Pacifico';
@@ -18,10 +22,17 @@ body{
         max-width: 1170px;
         width: 100%;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .logo-name{
         font-family: 'Pacifico';
@@ -33,15 +44,18 @@ body{
         color: #101011;
         padding: 7px 15px;
         font-size: 20px;
-
         &:hover{
             color: rgb(29, 76, 231);
         }
     }
     ul{
         padding: 5px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .geolab{
         width: 70px;
@@ -50,42 +64,6 @@ body{
     }
     .burger-icon {
         display: none;
-    }
-    @media (max-width: 768px){
-        .wrapper, 
-        ul{
-            display: block;
-            text-align: center;
-        }   
-        .nav-a{
-            display: block;
-        }  
-        .social-icons{
-            display: flex;
-            justify-content: center; 
-        } 
-        .logo{
-            text-align: left;
-        }
-        .burger-icon{
-            color: #000000;
-            display: block;
-            font-size: 30px;
-            position: absolute;
-            top: 40px;
-            right: 30px;
-            cursor:pointer;
-        }
-        .menu-ul,
-        .social-icons{
-            display: none;
-        }   
-        .menu-ul.open-menu{
-            display: block;
-        } 
-        social-icons.open-socicon{
-            display: flex;
-        } 
     }
     main{
         display: inline-block;
@@ -103,29 +81,31 @@ body{
             h1{
                 text-align: center;
                 font-family: 'Abril Fatface';
-                font-size: 62px;
+                font-size: 58px;
                 font-weight: 500;
                 line-height: 60px;
                 color: #fff;
                 margin-bottom: 50px;
             }
             .learn-more{
-                padding: 22px 35px;
-                background: rgb(116, 151, 245);
+                padding: 15px 24px;
+                background: white;
                 border-radius: 30px;
                 font-family: 'Roboto';
                 font-size: 18px;
                 font-weight: 500;
-                color: rgb(247, 247, 247);
+                color: rgb(29, 5, 245);
                 margin: auto;
-
+                -webkit-transition: all 1s;
+                -o-transition: all 1s;
+                transition: all 1s;
                 &:hover{
                     background: blue;
+                    color: white;
                 }
             }
         }
     }
-
     .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info, .learning, .about-us, .registation-section{
         width: 100%;
         max-width: 1660px;
@@ -133,8 +113,8 @@ body{
         margin: 50px auto;
         padding: 30px;
         border-radius: 30px;
+        background: -o-radial-gradient(circle, rgba(171,219,242,1) 0%, rgba(255,255,255,1) 83%);
         background: radial-gradient(circle, rgba(171,219,242,1) 0%, rgba(255,255,255,1) 83%);
-
         h2{
             font-family: 'Abril Fatface';
             font-size: 35px;
@@ -143,7 +123,7 @@ body{
         }
         p{
             font-family: 'Roboto';
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 400;
             color: #472249;
             margin: 15px 5px;
@@ -156,28 +136,29 @@ body{
             border-radius: 30px;
         }
     }
-
     .travel-info{
         .korea-spring, .korea-summer, .korea-autumn, .korea-winter{
             width: 100%;
             max-width: 1660px;
             min-height: 500px;
             margin: 50px auto 0px;
-
             h3{
                 font-family: 'Abril Fatface';
                 font-size: 30px;
                 font-weight: 500;
                 padding: 30px 0px 20px;
             }
-
             .picture{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-pack: space-evenly;
+                    -ms-flex-pack: space-evenly;
+                        justify-content: space-evenly;
                 gap: 30px;
                 margin: auto;
-
                 img{
                     width: auto;
                     height: auto;
@@ -187,14 +168,12 @@ body{
             }
         }
     }
-
     .travel-time{
         h2{
             font-family: 'Abril Fatface';
             font-size: 35px;
             font-weight: 400;
             margin-bottom: 30px;
-
         }
         p{
             font-family: 'Roboto';
@@ -203,7 +182,6 @@ body{
             color: #472249;
             margin: 15px 5px;
             line-height: 30px;
-
         }
         .places{
             h4{
@@ -215,60 +193,63 @@ body{
             }
             p{
                 font-family: 'Roboto';
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 400;
                 color: #472249;
                 margin: 10px 10px;
                 line-height: 32px;
             }
            .picture{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
                 gap: 30px;
                 margin: auto;
-
                 img{
                     width: auto;
                     height: auto;
                     max-width: 100%;
                     border-radius: 30px;
                 }
-           } 
+            } 
         }
     }
-
     .korean-food{
         p{
             color: #43095e;
         }
-
         .picture{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             gap: 30px;
             margin: auto;
-
             img{
                 width: auto;
                 height: auto;
                 max-width: 100%;
                 border-radius: 30px;
             }
-       } 
+        } 
     }   
-
     .trasport-info{
         p{
             color: rgb(22, 46, 22);
         }
     }
-
     .learning{
         max-width: 1660px;
         min-height: 1400px;
-
         h2{
             text-align: center;
             font-size: 42px;
@@ -276,14 +257,18 @@ body{
             padding: 20px 0px 15px;
         }
         .universities{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
             gap: 30px;
             width: 100%;
             max-width: 1660px;
             min-height: 700px;
-
             .univer{
                 width: 100%;
                 max-width:513px;
@@ -301,15 +286,17 @@ body{
                     border-radius: 30px;
                     border: 3px solid white;
                 }
-
                 .univer-info{
                     width: 100%;
                     max-width:535px;
                     min-height: 400px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    flex-direction: column;
-                    
-
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
                     h5{
                         font-family: 'Roboto';
                         font-size: 28px;
@@ -324,7 +311,6 @@ body{
                         color: rgb(106, 82, 109);
                         margin: 5px 5px 0px;
                         padding: 10px 20px;
-    
                         span{
                             color: rgb(0, 0, 0);
                             font-size: 22px;
@@ -345,17 +331,16 @@ body{
                         -webkit-box-shadow: 0px 2px 95px 0px rgba(82,125,207,0.75);
                         -moz-box-shadow: 0px 2px 95px 0px rgba(82,125,207,0.75);
                         color: rgb(13, 63, 128);
+                        -webkit-transition: all 1s;
+                        -o-transition: all 1s;
                         transition: all 1s;
                         margin: auto;
-
                         &:hover{
                             color: rgb(255, 255, 255);
                             font-size: 19px;
                         }
-
                     }
                 }
-
             }
         }
     }
@@ -366,12 +351,10 @@ body{
             font-size: 35px;
             font-weight: 500;
         }
-
         p{
             font-family: 'Roboto';
             font-size: 20px;
             font-weight: 400;
-            
             span{
                 font-family: 'Roboto';
                 font-size: 25px;
@@ -381,14 +364,22 @@ body{
     }
     .registation-section{
         form{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 30px;
-
             h2{
                 font-family: "Roboto";
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 font-size: 28px;
                 font-weight: 600;
                 margin: 0px;
@@ -407,9 +398,19 @@ body{
                 width: 100%;
                 max-width: 150px;
                 height: 60px;
+                font-family: "Roboto";
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                font-size: 20px;
+                font-weight: 400;
                 border-radius: 30px;
                 margin: auto;
                 cursor: pointer;
+                &:hover{
+                    background: rgb(177, 243, 252);
+                    font-size: 21px;
+                }
             }
         }
     }
@@ -417,18 +418,22 @@ body{
         width: 100%;
         min-height: 300px;
         padding: 50px 0px;
+        background: -o-radial-gradient(circle, rgba(171,219,242,1) 100%, rgba(255,255,255,1) 100%);
         background: radial-gradient(circle, rgba(171,219,242,1) 100%, rgba(255,255,255,1) 100%);
-
         .footer-conteiner{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             width: 100%;
             max-width: 1500px;
             min-height: 200px;
             margin: auto;
             padding: 20px;
-
             .footer-left{
                 width: 100%;
                 max-width: 750px;
@@ -448,7 +453,6 @@ body{
                         font-size: 28px;
                         padding: 0px 10px;
                         color: rgb(12, 110, 221);
-    
                         &:hover{
                             color: rgb(255, 255, 255);
                         }
@@ -456,13 +460,19 @@ body{
                 }
             }
             .footer-right{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                align-items: center;
-                column-gap: 30px;
-
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-column-gap: 30px;
+                   -moz-column-gap: 30px;
+                        column-gap: 30px;
                 a{
                     img{
-                        width: 100px;
+                        width: 100%;
+                        max-width: 100px;
                         height: 100px;
                         border-radius: 20px;
                     }
@@ -471,5 +481,4 @@ body{
         }
     }
 }
-
 @import "./responsive";

@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @media(max-width: 1200px){
   body{
     .wrapper{
@@ -49,7 +55,6 @@
     }
     footer{
       padding: 50px 30px;
-
       .footer-conteiner{
         .footer-left{
           margin-bottom: 30px;
@@ -68,42 +73,72 @@
       }
     }
   }
-
 }
- 
-
 @media(max-width: 768px){
   body{
+    .wrapper, 
+    ul{
+      display: block;
+      text-align: center;
+    }   
+    .nav-a{
+      display: block;
+    }  
+    .social-icons{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; 
+    } 
+    .logo{
+      text-align: left;
+    }
+    .burger-icon{
+      color: #000000;
+      display: block;
+      font-size: 30px;
+      position: absolute;
+      top: 40px;
+      right: 30px;
+      cursor:pointer;
+    }
+    .menu-ul,
+    .social-icons{
+      display: none;
+    }   
+    .menu-ul.open-menu{
+      display: block;
+    } 
+    social-icons.open-socicon{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
     .header-wraper{
       padding: 30px 0px;
     }
-    .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info{
-      padding: 25px;
+    .logo-name{
+      font-size: 30px;
+      font-weight: 500;
     }
-    .travel-time{
-      h4{
-        padding: 30px 0px 0px;
+    main{
+      .main-text{
+        h1{
+          font-size: 40px;
+        }
+        .learn-more{
+          padding: 15px 23px;
+          font-size: 15px;
+        }
       }
     }
-    .learning{
-      h2{
-        font-size: 44px;
-        font-weight: 400;
-      }
-    }
-  }
-}
-
-@media(max-width: 600px){
-  body{
-    .header-wraper{
-      padding: 30px 0px;
-    }
     .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info{
+      margin: 0px auto;
       padding: 25px;
-
       h2{
-        font-size: 25px;
+        font-size: 30px;
       }
       p{
         font-size: 18px;
@@ -115,41 +150,80 @@
           font-size: 25px;
           padding: 0px 0px 20px;
         }
-        p{
-          font-size: 18px;
-        }
       }
     }
     .travel-time{
-      h4{
-        padding: 30px 0px 0px;
-        font-size: 23px;
-      }
-      .places{
-        p{
-          font-size: 18px;
-        }
+        .places{
+          h4{
+            margin: 15px 5px 15px;
+            font-size: 26px;
+          }
+          p{
+            font-size: 18px;
+          }
       }
     }
     .learning{
+      margin: 0px auto;
       h2{
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 500;
       }
       .universities{
         .univer{
+          img{
+            height: 350px;
+          }
           .univer-info{
             h5{
-              font-size: 25px;
+              font-size: 23px;
               padding: 25px 20px 15px;
             }
             p{
-              font-size: 18px;
+              font-size: 16px;
               span{
-                font-size: 20px;
+                font-size: 18px;
+              }
+            }
+            .seemore{
+              max-width: 130px;
+              height: 50px;
+              padding: 17px 0px;
+              font-size: 16px;
+              &:hover{
+                color: rgb(255, 255, 255);
+                font-size: 17px;
               }
             }
           }
+        }
+      }
+    }
+    .registation-section{
+      form{
+        input{
+          height: 55px;
+          font-size: 14px;
+        }
+        .submit{
+          width: 100%;
+          max-width: 130px;
+          height: 50px;
+          font-size: 18px;
+          &:hover{
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    .about-us{
+      h5{
+        font-size: 30px;
+      }
+      p{
+        font-size: 18px;
+        span{
+          font-size: 20px;
         }
       }
     }
@@ -158,14 +232,173 @@
         .footer-left{
           margin-bottom: 30px;
           h6{
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 500;
             padding: 0px 0px 15px
           }
           p{
-            font-size: 25px;
+            font-size: 16px;
             a{
-              font-size: 22px;
+              font-size: 16px;
+            }
+          }
+        }
+        .footer-right{
+          a{
+            img{
+              width: 100%;
+              max-width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 600px){
+  body{
+    .header-wraper{
+      padding: 30px 0px;
+    }
+    .logo-name{
+      font-size: 28px;
+      font-weight: 500;
+    }
+    main{
+      .main-text{
+        h1{
+          font-size: 38px;
+        }
+        .learn-more{
+          padding: 14px 20px;
+          font-size: 15px;
+        }
+      }
+    }
+    .info-korea, .travel-info, .travel-time, .korean-food, .trasport-info, .about-us{
+      margin: 0px auto;
+      padding: 25px;
+      h2{
+        font-size: 22px;
+        padding: 20px 0px 0px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+    .travel-info{
+      .korea-spring, .korea-summer, .korea-autumn, .korea-winter{
+        h3{
+          font-size: 23px;
+          padding: 0px 0px 20px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+    .travel-time{
+      h4{
+        padding: 20px 0px 0px;
+        font-size: 23px;
+      }
+      .places{
+        h4{
+          font-size: 23px;
+          margin: 15px 5px 16px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+    .learning{
+      margin: 0px auto;
+      h2{
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .universities{
+        .univer{
+          img{
+            height: 300px;
+          }
+          .univer-info{
+            h5{
+              font-size: 23px;
+              padding: 25px 20px 15px;
+            }
+            p{
+              font-size: 16px;
+              span{
+                font-size: 18px;
+              }
+            }
+            .seemore{
+              max-width: 130px;
+              height: 50px;
+              padding: 17px 0px;
+              font-size: 16px;
+              &:hover{
+                color: rgb(255, 255, 255);
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .registation-section{
+      form{
+        input{
+          height: 55px;
+          font-size: 14px;
+        }
+        .submit{
+          width: 100%;
+          max-width: 130px;
+          height: 50px;
+          font-size: 18px;
+          &:hover{
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    .about-us{
+      h5{
+        font-size: 30px;
+      }
+      p{
+        span{
+          font-size: 20px;
+        }
+      }
+    }
+    footer{
+      .footer-conteiner{
+        .footer-left{
+          margin-bottom: 30px;
+          h6{
+            font-size: 35px;
+            font-weight: 500;
+            padding: 0px 0px 15px
+          }
+          p{
+            font-size: 16px;
+            a{
+              font-size: 16px;
+            }
+          }
+        }
+        .footer-right{
+          a{
+            img{
+              width: 100%;
+              max-width: 80px;
+              height: 80px;
             }
           }
         }
